@@ -61,7 +61,6 @@ export default class typenullsfx {
     sfx.currentTime = 0;
     sfx.volume = parseFloat(vol ?? "1");
     sfx.volume = isNaN(sfx.volume) ? 1 : sfx.volume;
-    // console.log(vol, sfx.volume);
     sfx.play();
 
     sfx.addEventListener("ended", handleEnded);
