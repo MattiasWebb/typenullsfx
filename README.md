@@ -9,11 +9,13 @@ A easy to use lite weight script/lib to play sounds manually or when some even o
 ### Creating NullSFX instance
 
 ```html index.html
+<!-- index.html -->
 <body>
     <script type="text/javascript" src="main.js"></script> <!-- compiled using your preferred tsconfig setup -->
 </body>
 ```
 ```ts main.ts
+// main.ts
 import { typenullsfx } from "./typenullsfx-min.js";
 
 /*
