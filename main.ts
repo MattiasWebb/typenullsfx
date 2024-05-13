@@ -1,5 +1,5 @@
-import typenullsfx from "./typenullsfx.js";
-let yo:{[key:string]:string} = {
+import { typenullsfx, tnsfxAudioList } from "./dist/typenullsfx-min.js";
+let yo:tnsfxAudioList = {
     bomb: "./sfx/Bomb.wav",
     epic: "./sfx/Epic.wav",
     wasted: "./sfx/Wasted.wav",

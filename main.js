@@ -1,4 +1,4 @@
-import typenullsfx from "./typenullsfx.js";
+import { typenullsfx } from "./dist/typenullsfx-min.js";
 let yo = {
     bomb: "./sfx/Bomb.wav",
     epic: "./sfx/Epic.wav",
