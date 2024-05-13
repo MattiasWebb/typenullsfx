@@ -8,25 +8,39 @@ A easy to use lite weight script/lib to play sounds manually or when some even o
 
 ### Creating NullSFX instance
 
-```html
+```html index.html
 <body>
-    <script src="https://raw.githubusercontent.com/MattiasWebb/typenullsfx/main/dist/typenullsfx-min.js"></script>
-    <script type="text/javascript">
-        const sfx_list = {
-            "audio1": "path/to/file.mp3",
-            "audio2": "/assets/sfx/boom.wav",
-            "audio3": "/assets/sfx/hover/select.wav",
-        }
-        const sfxer = new typenullsfx(sfx_list);
-    </script>
+    <script type="text/javascript" src="main.js"></script> <!-- compiled using your preferred tsconfig setup -->
 </body>
+```
+```ts main.ts
+import { typenullsfx } from "./typenullsfx-min.js";
+
+/*
+if you're importing typenull-sfx-min.ts instead 
+of the javascript file, it has this export:
+
+type tnsfxAudioList = {
+    [key: string] : string
+}
+
+so that you dont have to make this every time 
+you want to have an audio sources object
+
+*/
+
+const sfx_list: tnsfxAudioList = {
+    "audio1": "path/to/file.mp3",
+    "audio2": "/assets/sfx/boom.wav",
+    "audio3": "/assets/sfx/hover/select.wav",
+}
+const sfxer = new typenullsfx(sfx_list);
 ```
 
 ```txt
 Note:
 the key corresponding to each source path in sfx_list should not contain any 
-space or any special symbol other than "_" & "-" and should strictly be in 
-lower case.
+space or any special symbol other than "_" & "-" to prevent any unwanted errors.
 ```
 
 ### Juicy Stuff
