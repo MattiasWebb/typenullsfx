@@ -1,4 +1,4 @@
-export default class typenullsfx {
+export class typenullsfx {
     sfx_list;
     audioEles;
     constructor(sfx_list) {

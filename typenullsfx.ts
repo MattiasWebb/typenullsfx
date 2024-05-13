@@ -1,7 +1,8 @@
-export default class typenullsfx {
-  public sfx_list: {
-    [key: string]: string;
-  };
+export type tnsfxAudioList = {
+    [key: string] : string
+}
+export class typenullsfx {
+  public sfx_list: tnsfxAudioList;
   public audioEles: {
     [key: string]: HTMLAudioElement;
   };
