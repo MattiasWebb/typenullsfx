@@ -17,7 +17,7 @@ A easy to use lite weight script/lib to play sounds manually or when some even o
             "audio2": "/assets/sfx/boom.wav",
             "audio3": "/assets/sfx/hover/select.wav",
         }
-        const sfxer = nullsfx(sfx_list);
+        const sfxer = new typenullsfx(sfx_list);
     </script>
 </body>
 ```
