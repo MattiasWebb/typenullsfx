@@ -10,7 +10,7 @@ A easy to use lite weight script/lib to play sounds manually or when some even o
 
 ```html
 <body>
-    <script src="https://raw.githubusercontent.com/DevOmni/nullsfx/main/dist/nullsfx.min.js"></script>
+    <script src="https://raw.githubusercontent.com/MattiasWebb/typenullsfx/main/dist/typenullsfx-min.js"></script>
     <script type="text/javascript">
         const sfx_list = {
             "audio1": "path/to/file.mp3",
